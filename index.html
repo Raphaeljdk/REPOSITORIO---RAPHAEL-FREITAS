@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>Raphael Freitas | Desenvolvedor Full Stack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Raphael Freitas - Desenvolvedor Full Stack especializado em React, Java e soluções escaláveis" />
+  <meta name="theme-color" content="#3b82f6" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="/" class="logo">raphael.freitas</a>
+
+      <nav class="nav-links">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projetos</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#contact">Contato</a>
+        
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+          <span class="light-icon">☀️</span>
+          <span class="dark-icon">🌙</span>
+          <span class="theme-text">Tema</span>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Theme Toggle Flutuante (opcional) -->
+  <button class="theme-toggle-floating" id="themeToggleFloating" aria-label="Alternar tema">
+    <span class="light-icon">☀️</span>
+    <span class="dark-icon">🌙</span>
+  </button>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-greeting">👋 Olá, eu sou</span>
+      <h1 class="hero-title">
+        Raphael <span class="gradient-text">Freitas</span>
+      </h1>
+      <h2 class="hero-subtitle">Desenvolvedor Full Stack</h2>
+      <p class="hero-description">
+        Especializado em criar experiências digitais incríveis com 
+        <strong>React, Node.js e Java</strong>. Transformo ideias em código limpo e escalável.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Ver Projetos →</a>
+        <a href="#contact" class="btn btn-outline">Contato</a>
+      </div>
+    </div>
+    
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number">3+</span>
+        <span class="stat-label">Anos de experiência</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">15+</span>
+        <span class="stat-label">Projetos entregues</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Satisfação</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS SECTION ==================== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Minhas competências</span>
+        <h2 class="section-title">Tecnologias que <span class="gradient-text">domino</span></h2>
+        <p class="section-description">
+          Combinando experiência prática com aprendizado contínuo para entregar 
+          soluções de alta qualidade
+        </p>
+      </div>
+
+      <!-- Skills Legend -->
+      <div class="skills-legend">
+        <div class="legend-item">
+          <span class="legend-color frontend"></span>
+          <span>Frontend</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-color backend"></span>
+          <span>Backend</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-color database"></span>
+          <span>Banco de Dados</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-color tools"></span>
+          <span>Ferramentas</span>
+        </div>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-container">
+        <div class="skills-category">
+          <h3>🎨 Front-end</h3>
+          <div class="skills-grid" id="skills-frontend"></div>
+        </div>
+        
+        <div class="skills-category">
+          <h3>⚙️ Back-end</h3>
+          <div class="skills-grid" id="skills-backend"></div>
+        </div>
+        
+        <div class="skills-category">
+          <h3>🗄️ Banco de Dados</h3>
+          <div class="skills-grid" id="skills-database"></div>
+        </div>
+        
+        <div class="skills-category">
+          <h3>🛠️ Ferramentas</h3>
+          <div class="skills-grid" id="skills-tools"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS SECTION ==================== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Meu trabalho</span>
+        <h2 class="section-title">Projetos em <span class="gradient-text">Destaque</span></h2>
+        <p class="section-description">
+          Alguns dos trabalhos que desenvolvi recentemente
+        </p>
+      </div>
+
+      <!-- Projects Filter -->
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="React">React</button>
+        <button class="filter-btn" data-filter="Java">Java</button>
+        <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+      </div>
+      
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects"></div>
+      
+      <!-- Pagination -->
+      <div id="pagination" class="pagination-container"></div>
+    </div>
+  </section>
+
+  <!-- ==================== ROADMAP SECTION ==================== -->
+  <section id="roadmap" class="section roadmap-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Evolução contínua</span>
+        <h2 class="section-title">Roadmap de <span class="gradient-text">Estudos</span></h2>
+        <p class="section-description">
+          Planejamento estratégico para me tornar um desenvolvedor Full Stack completo
+        </p>
+      </div>
+
+      <!-- Timeline Legend -->
+      <div class="timeline-legend">
+        <div class="legend-item">
+          <span class="legend-dot completed"></span>
+          <span>Concluído</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot in-progress"></span>
+          <span>Em andamento</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot"></span>
+          <span>Próximos passos</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot featured"></span>
+          <span>Destaque</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot future"></span>
+          <span>Futuro</span>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="roadmap-timeline">
+        <h3 class="timeline-title">📅 Jornada de Aprendizado 2025-2026</h3>
+        
+        <!-- FASE 1: FUNDAMENTOS -->
+        <div class="timeline-item completed">
+          <div class="timeline-marker completed"></div>
+          <div class="timeline-content">
+            <span class="timeline-month">Mês 1-2</span>
+            <h4>Fundação Sólida</h4>
+            <p>HTML5 semântico, CSS3 moderno, JavaScript ES6+</p>
+            <div class="timeline-tech">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <div class="timeline-projects">
+              <small>✅ Projetos: Site institucional, Landing page</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- FASE 2: FRONTEND -->
+        <div class="timeline-item completed">
+          <div class="timeline-marker completed"></div>
+          <div class="timeline-content">
+            <span class="timeline-month">Mês 3-4</span>
+            <h4>Frontend Moderno</h4>
+            <p>React, TypeScript, Tailwind, Consumo de APIs</p>
+            <div class="timeline-tech">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">Tailwind</span>
+              <span class="tech-badge">Fetch/Axios</span>
+            </div>
+            <div class="timeline-projects">
+              <small>✅ Projetos: Dashboard, Todo List avançado, App de clima</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- FASE 3: BACKEND INICIAL -->
+        <div class="timeline-item in-progress">
+          <div class="timeline-marker in-progress"></div>
+          <div class="timeline-content">
+            <span class="timeline-month">Mês 5-6</span>
+            <h4>Backend Fundamentals</h4>
+            <p>Node.js, Express, APIs REST, Autenticação JWT</p>
+            <div class="timeline-tech">
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Express</span>
+              <span class="tech-badge">JWT</span>
+              <span class="tech-badge">Postman</span>
+            </div>
+            <div class="timeline-projects">
+              <small>⏳ Projetos: API de usuários, Sistema de autenticação</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- FASE 4: BANCO DE DADOS -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-month">Mês 7-8</span>
+            <h4>Banco de Dados & Persistência</h4>
+            <p>SQL, MongoDB, Prisma, Modelagem de dados</p>
+            <div class="timeline-tech">
+              <span class="tech-badge">PostgreSQL</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">Prisma</span>
+              <span class="tech-badge">SQL</span>
+            </div>
+            <div class="timeline-projects">
+              <small>📝 Projetos: CRUD completo, Blog com banco de dados</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- FASE 5: JAVA -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-month">Mês 9-10</span>
+            <h4>Java & Spring Boot</h4>
+            <p>Java moderno, Spring Boot, JPA, Microserviços</p>
+            <div class="timeline-tech">
+              <span class="tech-badge">Java 17+</span>
+              <span class="tech-badge">Spring Boot</span>
+              <span class="tech-badge">JPA/Hibernate</span>
+              <span class="tech-badge">Maven</span>
+            </div>
+            <div class="timeline-projects">
+              <small>📝 Projetos: API REST com Spring, Sistema de pedidos</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- FASE 6: DEVOPS & DEPLOY -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-month">Mês 11-12</span>
+            <h4>DevOps & Cloud</h4>
+            <p>Docker, CI/CD, AWS/GCP, Deploy de aplicações</p>
+            <div class="timeline-tech">
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">GitHub Actions</span>
+              <span class="tech-badge">AWS</span>
+              <span class="tech-badge">Vercel/Netlify</span>
+            </div>
+            <div class="timeline-projects">
+              <small>📝 Projetos: Deploy full stack, Pipeline CI/CD</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- FASE 7: PROJETO FINAL -->
+        <div class="timeline-item featured">
+          <div class="timeline-marker featured"></div>
+          <div class="timeline-content">
+            <span class="timeline-month">Mês 13-14</span>
+            <h4>Projeto Final - Portfólio Profissional</h4>
+            <p>Aplicação full stack completa com todas as tecnologias</p>
+            <div class="timeline-tech">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Node.js/Java</span>
+              <span class="tech-badge">PostgreSQL</span>
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">AWS</span>
+            </div>
+            <div class="timeline-projects">
+              <small>🚀 Projeto: E-commerce, Dashboard SaaS, ou Sistema de gestão</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- FASE 8: ESPECIALIZAÇÃO -->
+        <div class="timeline-item future">
+          <div class="timeline-marker future"></div>
+          <div class="timeline-content">
+            <span class="timeline-month">Mês 15+</span>
+            <h4>Especialização & Mercado</h4>
+            <p>Aprofundamento em arquitetura, performance, segurança</p>
+            <div class="timeline-tech">
+              <span class="tech-badge">Next.js</span>
+              <span class="tech-badge">Kubernetes</span>
+              <span class="tech-badge">Redis</span>
+              <span class="tech-badge">Kafka</span>
+              <span class="tech-badge">Testes</span>
+            </div>
+            <div class="timeline-projects">
+              <small>🔮 Projetos: Open Source, Contribuições, Biblioteca própria</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EVOLUTION DASHBOARD ==================== -->
+  <section class="evolution-dashboard">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Métricas de aprendizado</span>
+        <h2 class="section-title">Evolução das <span class="gradient-text">Skills</span></h2>
+        <p class="section-description">
+          Acompanhe meu progresso técnico e nível de proficiência em cada tecnologia
+        </p>
+      </div>
+
+      <!-- Stats Cards -->
+      <div class="evolution-stats">
+        <div class="stat-card">
+          <div class="stat-icon">📚</div>
+          <div class="stat-content">
+            <span class="stat-value">11</span>
+            <span class="stat-label">Tecnologias</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🎯</div>
+          <div class="stat-content">
+            <span class="stat-value">73%</span>
+            <span class="stat-label">Média geral</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🚀</div>
+          <div class="stat-content">
+            <span class="stat-value">4</span>
+            <span class="stat-label">Em evolução</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Evolution Grid -->
+      <div class="evolution-grid">
+        <div class="evolution-category">
+          <div class="category-header">
+            <span class="category-icon">🎨</span>
+            <h3>Frontend</h3>
+            <span class="category-average">85%</span>
+          </div>
+          <div class="skills-evolution-list" id="evolution-frontend"></div>
+        </div>
+
+        <div class="evolution-category">
+          <div class="category-header">
+            <span class="category-icon">⚙️</span>
+            <h3>Backend</h3>
+            <span class="category-average">45%</span>
+          </div>
+          <div class="skills-evolution-list" id="evolution-backend"></div>
+        </div>
+
+        <div class="evolution-category">
+          <div class="category-header">
+            <span class="category-icon">🗄️</span>
+            <h3>Banco de Dados</h3>
+            <span class="category-average">55%</span>
+          </div>
+          <div class="skills-evolution-list" id="evolution-database"></div>
+        </div>
+
+        <div class="evolution-category">
+          <div class="category-header">
+            <span class="category-icon">🛠️</span>
+            <h3>Ferramentas</h3>
+            <span class="category-average">68%</span>
+          </div>
+          <div class="skills-evolution-list" id="evolution-tools"></div>
+        </div>
+      </div>
+
+      <!-- Chart -->
+      <div class="evolution-chart-container">
+        <canvas id="evolutionChart"></canvas>
+<div class="chart-legend">
+  <div class="legend-level">
+    <span class="level-dot expert"></span>
+    <span>Avançado (80%+)</span>
+  </div>
+  <div class="legend-level">
+    <span class="level-dot intermediate"></span>
+    <span>Intermediário (60-79%)</span>
+  </div>
+  <div class="legend-level">
+    <span class="level-dot basic"></span>
+    <span>Básico (40-59%)</span>
+  </div>
+  <div class="legend-level">
+    <span class="level-dot beginner"></span>
+    <span>Iniciante (0-39%)</span>
+  </div>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ROADMAP GRID (DINÂMICO) ==================== -->
+  <div class="container">
+    <div id="roadmap" class="roadmap-grid"></div>
+  </div>
+
+  <!-- ==================== AI SUGGESTION ==================== -->
+  <div class="ai-suggestion-card">
+    <div class="suggestion-header">
+      <span class="suggestion-icon">🤖</span>
+      <span class="suggestion-title">Próximo foco recomendado</span>
+    </div>
+    
+    <div class="suggestion-body">
+      <div class="skill-focus">
+        <span class="skill-name">React</span>
+        <span class="skill-status">Em desenvolvimento</span>
+      </div>
+      
+      <div class="progress-mini">
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 20%"></div>
+        </div>
+        <span class="progress-text">20% concluído</span>
+      </div>
+      
+      <p class="suggestion-message">
+        <strong>Momento ideal para aplicar em projetos.</strong><br>
+        Priorize prática em projetos pequenos como:
+      </p>
+      
+      <ul class="suggestion-tips">
+        <li>📱 Todo List avançado com hooks</li>
+        <li>🌦️ App de clima com API</li>
+        <li>🛒 Carrinho de compras</li>
+      </ul>
+      
+      <a href="#" class="suggestion-link">Ver recursos recomendados →</a>
+    </div>
+  </div>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-card">
+        <h2>Vamos <span class="gradient-text">conversar?</span></h2>
+        <p class="contact-description">
+          Estou aberto a novas oportunidades e parcerias. 
+          Se tiver um projeto em mente ou quiser bater um papo, entre em contato.
+        </p>
+        
+        <div class="contact-info">
+          <div class="contact-item">
+            <strong>Email:</strong>
+            <a href="mailto:raphaelfreitasdossantos651@gmail.com">raphaelfreitasdossantos651@gmail.com</a>
+          </div>
+          
+          <div class="contact-item">
+            <strong>Localização:</strong>
+            <span>Remoto · São Paulo, Brasil</span>
+          </div>
+        </div>
+        
+        <div class="contact-links">
+          <a href="https://github.com/Raphaeljdk" target="_blank" class="contact-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/raphael-freitas-dos-santos-a42704260/" target="_blank" class="contact-link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>© 2026 Raphael Freitas. Todos os direitos reservados.</p>
+        <p>Desenvolvido com ☕ e código limpo</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
