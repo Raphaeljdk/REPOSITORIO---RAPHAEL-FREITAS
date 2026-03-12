@@ -22,5 +22,17 @@
     "link": "https://raphaeljdk.github.io/TMS-Lite-PRO---Sistema-Inteligente-de-Gest-o-de-Fretes../",
     "github": "https://github.com/Raphaeljdk/TMS-Lite-PRO",
     "featured": true
+  },
+  {
+    "id": 3,
+    "title": "TradePro - Plataforma Profissional de Trading",
+    "description": "Plataforma profissional para trading com visualização de dados de mercado em tempo real e ferramentas avançadas de análise.",
+    "category": "Fintech / Trading",
+    "technologies": ["React", "javascript", "Chart.js", "WebSockets"],
+    "difficulty": 88,
+    "highlights": ["Trading", "Tempo Real", "Análise Técnica"],
+    "link": "https://raphaeljdk.github.io/-TradePro---Plataforma-Profissional-de-Trading/",
+    "github": "",
+    "featured": true
   }
 ]
