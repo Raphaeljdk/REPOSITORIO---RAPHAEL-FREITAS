@@ -34,5 +34,17 @@
     "link": "https://raphaeljdk.github.io/-TradePro---Plataforma-Profissional-de-Trading/",
     "github": "",
     "featured": true
+  },
+  {
+    "id": 4,
+    "title": "Herdeiros do Einstein",
+    "description": "Mini SaaS educacional que transforma exercícios matemáticos em uma experiência envolvente com progressão, ranking e feedback em tempo real.",
+    "category": "Educação / SaaS",
+    "technologies": ["JavaScript", "HTML", "CSS", "localStorage"],
+    "difficulty": 80,
+    "highlights": ["Sistema de Níveis", "Ranking Global", "Feedback Instantâneo", "Arquitetura Modular"],
+    "link": "https://raphaeljdk.github.io/HERDEIROS-DO-EINSTEIN/",
+    "github": "https://github.com/Raphaeljdk/HERDEIROS-DO-EINSTEIN",
+    "featured": true
   }
 ]
